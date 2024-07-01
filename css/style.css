@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Carrois+Gothic+SC&family=Krona+One&family=Mina:wght@400;700&family=Nunito&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+header .logo h1 {
+    color: #fa6407;
+    font-size: 2.2em;
+    font-family: "Mina", sans-serif;
+    margin: 10px;
+}
+
+.button-nav {
+    font-family: "Roboto", sans-serif;
+    border: none;
+    color: #fa6407;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.button-nav:hover {
+    background-color: #edcca6;
+}
+
+.background-image {
+    position: relative;
+}
+
+#portada {
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+}
+
+.subtitle {
+    color: #546058;
+    padding: 5px;
+    font-size: 2em;
+    font-family: "Mina", sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: "Mina", sans-serif;
+    color: #546058;
+    font-size: 1em;
+    text-align: center;
+}
+
+h3 {
+    color: #fa6407;
+    font-size: 1em;
+    text-align: center;
+}
+
+h4 {
+    color: #f4f4f4;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+    }
+
+    #portada {
+        width: 100%;
+        height: auto;
+        padding: 10px 0px;
+    }
+
+    .logo {
+        margin: 5px 5px 5px 50px;
+        font-size: 0.8em;
+    }
+
+    .button-nav {
+        color: #fa6407;
+        font-size: 0.8em;
+        margin: 10px;
+        padding: 5px 5px;
+    }
+
+    .subtitle {
+        font-size: 1.1em;
+    }
+
+    .section-grid-container {
+        display: grid;
+        grid-template-areas:
+            "title1"
+            "ph1"
+            "title2"
+            "ph2"
+            "title3"
+            "ph3";
+        gap: 15px;
+    }
+
+    #title1 {
+        grid-area: title1;
+    }
+
+    #ph1 {
+        grid-area: ph1;
+    }
+
+    #title2 {
+        grid-area: title2;
+    }
+
+    #ph2 {
+        grid-area: ph2;
+    }
+
+    #title3 {
+        grid-area: title3;
+    }
+
+    #ph3 {
+        grid-area: ph3;
+    }
+
+    .photo {
+        width: 300px;
+        height: 300px;
+    }
+
+    .text-image {
+        color: #fa6407;
+        font-size: 1em;
+        text-align: center;
+    }
+    .img-info {
+        width: 300px;
+        height: 150px;
+    }
+    .phfallas{
+        display: flex;
+        width: 250px;
+        height: 250px ;
+    }  
+}
+
+@media (min-width: 769px) {
+    .button-nav {
+        text-align: right;
+        justify-content: right;
+        color: #fa6407;
+        font-family: "Roboto", sans-serif;
+        border: none;
+        padding: 5px 5px;
+        margin: 50px;
+    }
+
+    #portada {
+        width: 100%;
+        height: auto;
+        padding: 10px 0px;
+    }
+
+    .section-grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        grid-template-areas:
+            "title1 title2 title3"
+            "ph1 ph2 ph3";
+        gap: 15px;
+    }
+
+    #title1 {
+        grid-area: title1;
+    }
+
+    #ph1 {
+        grid-area: ph1;
+    }
+
+    #title2 {
+        grid-area: title2;
+    }
+
+    #ph2 {
+        grid-area: ph2;
+    }
+
+    #title3 {
+        grid-area: title3;
+    }
+
+    #ph3 {
+        grid-area: ph3;
+    }
+
+    .logo {
+        font-size: 0.8em;
+    }
+
+    .photo {
+        width: 500px;
+        height: 500px;
+    }
+
+    .text-image {
+        color: #fa6407;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .img-info {
+        width: 550px;
+        height: 350px;
+    }
+ 
+    .logo h1 {
+        font-size: 1.4em;
+    }
+
+    .browser nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .browser nav a {
+        margin-bottom: 10px;
+    }
+    .phfallas{
+        display: flex;
+        width: 730px;
+        height:750px ;
+    }  
+
+}
+
+.button-video {
+    display: flex;
+    margin: 10px 0 0;
+    padding: 5px;
+    text-decoration: none;
+    justify-content: center;
+    background-color: #fa6407;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footnote {
+    color: #463e3a;
+    text-align: center;
+    padding: 15px;
+}
+
+/* css formulario de contacto */
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact,
+.coment {
+    margin-bottom: 15px;
+}
+
+.contact label,
+.coment label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.coment textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+

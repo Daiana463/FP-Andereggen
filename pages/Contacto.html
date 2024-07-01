@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurismoVLC</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header> 
+        <div class="logo">
+            <h1>LIVEVALENCIA</h1> 
+        </div>         
+        <div class="browser">
+            <nav>  
+                <a href="../index.html" class="button-nav">HOME</a>             
+                <a href="../pages/Quever.html" class="button-nav">QUÉ VER</a>
+                <a href="../pages/Escapadas.html" class="button-nav">ESCAPADAS</a>
+                <a href="../pages/FallasValencianas.html" class="button-nav">FALLAS</a> 
+                <a href="#" class="button-nav">CONTACTO</a>
+            </nav> 
+        </div> 
+    </header>
+
+    <main>
+        <h2 class="subtitle text-center">DEJÁ TU COMENTARIO</h2>
+        <form action="submit_form.php" method="POST">
+            <fieldset>
+                <legend>NOS INTERESA TU OPINIÓN</legend>
+                <div class="contact">
+                    <label for="nombre">NOMBRE:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="apellido">APELLIDO:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+
+                    <label for="email">EMAIL:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="coment">
+                    <label for="comentario">COMENTARIO:</label>
+                    <textarea id="comentario" name="comentario" rows="4" required></textarea>
+                </div>
+                <div class="button-send">
+                    <button type="submit">ENVIAR</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p class="footnote">&copy; 2024 TurismoVLC. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
