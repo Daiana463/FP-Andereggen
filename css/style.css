@@ -162,8 +162,8 @@ ul {
     }
     .phfallas{
         display: flex;
-        width: 250px;
-        height: 250px ;
+        width: 100%;
+        height: auto ;
     }  
 }
 
