@@ -96,14 +96,14 @@ ul {
     }
 
     .logo {
-        margin: 5px 5px 5px 50px;
+        margin: 5px 5px 5px 5px;
         font-size: 0.8em;
     }
 
     .button-nav {
         color: #fa6407;
         font-size: 0.8em;
-        margin: 10px;
+        margin: 15px;
         padding: 5px 5px;
     }
 
