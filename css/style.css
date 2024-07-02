@@ -95,9 +95,11 @@ ul {
         padding: 10px 0px;
     }
 
-    .logo {    
-        font-size: 0.8em;
-        margin: 0px 10px 0px 70px;
+    .logo {   
+              
+        font-size: 0.8em;  
+        padding-left: 60px;  
+      
     }
 
     .button-nav {
