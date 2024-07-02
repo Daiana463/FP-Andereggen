@@ -97,13 +97,14 @@ ul {
 
     .logo {    
         font-size: 0.8em;
+        margin: 5px 5px 5px 25px;
     }
 
     .button-nav {
         color: #fa6407;
         font-size: 0.8em;
-        margin: 50px;
-        padding: 5px 50px;
+        margin: 20px;
+        padding: 5px 40px;
     }
 
     .subtitle {
