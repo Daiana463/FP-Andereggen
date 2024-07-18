@@ -30,7 +30,7 @@
       font-family: "Roboto", sans-serif;
       border: none;
       color: #fa6407;
-      padding: 10px 20px;
+      padding: 10px 10px;
       text-decoration: none;
   
       &:hover {
@@ -75,6 +75,13 @@
   
     ul {
       list-style-type: none;
+    }
+
+    .phfallas {   
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   
     .button-video {
