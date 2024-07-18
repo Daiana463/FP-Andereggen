@@ -1,14 +1,3 @@
-@import "base/reset";
-@import "base/global";
-
-@import "utilities/mixins";
-
-@import "components/header";
-@import "components/footer";
-
-@import "components/form";
-@import "components/buttons";
-
-@import "layouts/layout";
-
-@import "pages/home";
+@import "layouts/layouts";
+@import "responsive/mediaqueries";
+@import "form/form.scss";
