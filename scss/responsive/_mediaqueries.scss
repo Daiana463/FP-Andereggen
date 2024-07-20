@@ -16,51 +16,22 @@
 
     .logo {
       font-size: 0.8em;
-      padding-left: 80px;
+      padding: 10px;
     }
 
-    .browser nav {
-      display: none;
-      flex-direction: column;
-      background-color: #333;
-      width: 100%;
-      position: absolute;
-      top: 60px;
-      left: 0;
-   }
-    
-   .browser nav a {
-      padding: 10px 20px;
-      border-top: 1px solid #444;
-  }
-    
-   .menu-toggle {
-      display: flex;
-  }
-    
-   .browser nav.active {
-      display: flex;
+    .button-nav {
+      color: #fa6407;
+      font-size: 0.8em;
+      margin: 50px;
+      padding: 5px 5px;
+      text-overflow: inherit;
     }
-    
-   .menu-toggle.toggle span:nth-child(1) {
-     transform: rotate(45deg) translate(5px, 5px);
-   }
-    
-   .menu-toggle.toggle span:nth-child(2) {
-      opacity: 0;
-  }
-    
-   .menu-toggle.toggle span:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -5px);
-  }
-}
-    
 
-   .subtitle {
+    .subtitle {
       font-size: 1.1em;
-  }
+    }
 
-   .section-grid-container {
+    .section-grid-container {
       display: grid;
       grid-template-areas:
         "title1"
@@ -71,33 +42,35 @@
         "ph3";
       gap: 15px;
 
-    #title1 {
-      grid-area: title1;
+      #title1 {
+        grid-area: title1;
+      }
+
+      #ph1 {
+        grid-area: ph1;
+      }
+
+      #title2 {
+        grid-area: title2;
+      }
+
+      #ph2 {
+        grid-area: ph2;
+      }
+
+      #title3 {
+        grid-area: title3;
+      }
+
+      #ph3 {
+        grid-area: ph3;
+      }
     }
 
-    #ph1 {
-      grid-area: ph1;
-    }
-
-    #title2 {
-      grid-area: title2;
-    }
-
-    #ph2 {
-      grid-area: ph2;
-    }
-
-    #title3 {
-      grid-area: title3;
-    }
-
-    #ph3 {
-      grid-area: ph3;
-    }
-  }
     .photo {
       width: 300px;
       height: 300px;
+      
     }
 
     .text-image {
@@ -115,12 +88,21 @@
       display: flex;
       width: 100%;
       height: auto;
-    }
+   }
   }
-
+}
 
 @media (min-width: 769px) {
-  body { 
+  body {
+    .button-nav {
+      text-align: center;
+      justify-content: center;
+      color: #fa6407;
+      font-family: "Roboto", sans-serif;
+      border: none;
+      padding: 5px 5px;
+      margin: 50px;
+    }
 
     #portada {
       width: 100%;
@@ -200,8 +182,9 @@
     .phfallas {
       display: flex;
       width: 730px;
-      height: 750px;
+      height: 600px;
     }
+ 
   }
-}
 
+}

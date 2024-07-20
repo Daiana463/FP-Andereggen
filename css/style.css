@@ -17,20 +17,92 @@ body header {
 }
 body header .logo h1 {
   color: #fa6407;
-  font-size: 2.2em;
   font-weight: bold;
+  font-size: 2.2em;
   font-family: "Mina", sans-serif;
-  margin: 50px 100px;
+  margin: 10px;
 }
 body .button-nav {
   font-family: "Roboto", sans-serif;
   border: none;
   color: #fa6407;
-  padding: 5px 5px;
+  padding: 10px 10px;
   text-decoration: none;
 }
 body .button-nav:hover {
   background-color: #edcca6;
+}
+body .background-image {
+  position: relative;
+}
+body #portada {
+  width: 100%;
+  height: auto;
+  padding: 10px 0px;
+}
+body .subtitle {
+  color: #546058;
+  padding: 5px;
+  font-size: 2em;
+  font-family: "Mina", sans-serif;
+  text-align: center;
+}
+body p {
+  font-family: "Mina", sans-serif;
+  color: #546058;
+  font-size: 1em;
+  text-align: center;
+}
+body h3 {
+  color: #fa6407;
+  font-size: 1em;
+  text-align: center;
+}
+body h4 {
+  color: #f4f4f4;
+}
+body ul {
+  list-style-type: none;
+}
+body .button-video {
+  display: flex;
+  margin: 10px 0 0;
+  padding: 5px;
+  text-decoration: none;
+  justify-content: center;
+  background-color: #fa6407;
+}
+body a {
+  text-decoration: none;
+}
+body .container {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+body .main-content {
+  display: grid;
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+body .information {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+body .destination {
+  text-align: center;
+}
+body .phfallas {
+  max-width: 100%;
+  height: auto;
+}
+body .button-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -48,82 +120,70 @@ body .button-nav:hover {
   }
   body .logo {
     font-size: 0.8em;
-    padding-left: 80px;
+    padding: 10px;
   }
-  body .browser nav {
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
+  body .button-nav {
+    color: #fa6407;
+    font-size: 0.8em;
+    margin: 50px;
+    padding: 5px 5px;
+    text-overflow: inherit;
   }
-  body .browser nav a {
-    padding: 10px 20px;
-    border-top: 1px solid #444;
-  }
-  body .menu-toggle {
-    display: flex;
-  }
-  body .browser nav.active {
-    display: flex;
-  }
-  body .menu-toggle.toggle span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-  body .menu-toggle.toggle span:nth-child(2) {
-    opacity: 0;
-  }
-  body .menu-toggle.toggle span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
-  .subtitle {
+  body .subtitle {
     font-size: 1.1em;
   }
-  .section-grid-container {
+  body .section-grid-container {
     display: grid;
     grid-template-areas: "title1" "ph1" "title2" "ph2" "title3" "ph3";
     gap: 15px;
   }
-  .section-grid-container #title1 {
+  body .section-grid-container #title1 {
     grid-area: title1;
   }
-  .section-grid-container #ph1 {
+  body .section-grid-container #ph1 {
     grid-area: ph1;
   }
-  .section-grid-container #title2 {
+  body .section-grid-container #title2 {
     grid-area: title2;
   }
-  .section-grid-container #ph2 {
+  body .section-grid-container #ph2 {
     grid-area: ph2;
   }
-  .section-grid-container #title3 {
+  body .section-grid-container #title3 {
     grid-area: title3;
   }
-  .section-grid-container #ph3 {
+  body .section-grid-container #ph3 {
     grid-area: ph3;
   }
-  .photo {
+  body .photo {
     width: 300px;
     height: 300px;
   }
-  .text-image {
+  body .text-image {
     color: #fa6407;
     font-size: 1em;
     text-align: center;
   }
-  .img-info {
+  body .img-info {
     width: 100%;
     height: auto;
   }
-  .phfallas {
+  body .phfallas {
     display: flex;
     width: 100%;
     height: auto;
   }
 }
 @media (min-width: 769px) {
+  body .button-nav {
+    text-align: center;
+    justify-content: center;
+    color: #fa6407;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    padding: 5px 5px;
+    margin: 50px;
+  }
   body #portada {
     width: 100%;
     height: auto;
@@ -183,7 +243,7 @@ body .button-nav:hover {
   body .phfallas {
     display: flex;
     width: 730px;
-    height: 750px;
+    height: 600px;
   }
 }
 form {
