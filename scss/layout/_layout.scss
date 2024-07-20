@@ -125,11 +125,13 @@ body {
   .phfallas {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
     transition: transform 0.3s ease;
   }
 
   .phfallas:hover {
     transform: scale(1.1);
+    border-radius: 10px;
   }
 
   .button-link {

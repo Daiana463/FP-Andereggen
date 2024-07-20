@@ -109,10 +109,12 @@ body .infofallas {
 body .phfallas {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
   transition: transform 0.3s ease;
 }
 body .phfallas:hover {
   transform: scale(1.1);
+  border-radius: 10px;
 }
 body .button-link {
   margin-top: 1rem;
@@ -255,8 +257,8 @@ body .button-link {
   }
   body .phfallas {
     display: flex;
-    width: 730px;
-    height: 600px;
+    width: 800px;
+    height: 550px;
   }
 }
 form {
