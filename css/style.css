@@ -49,7 +49,7 @@ body .subtitle {
 }
 body .photo {
   transition: transform 0.3s ease;
-  border-radius: 10px;
+  padding: 20px;
 }
 body .photo:hover {
   transform: scale(1.1);
@@ -61,6 +61,7 @@ body .img-info {
   transition: transform 0.3s ease;
   border-radius: 0.5rem;
   overflow: hidden;
+  padding: 20px;
 }
 body .img-info:hover {
   transform: scale(1.1);
@@ -111,6 +112,7 @@ body .phfallas {
   height: auto;
   border-radius: 10px;
   transition: transform 0.3s ease;
+  padding: 20px;
 }
 body .phfallas:hover {
   transform: scale(1.1);
