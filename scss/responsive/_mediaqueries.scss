@@ -188,5 +188,60 @@
     }
  
   }
+  form {
+    max-width: $max-width-form;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid $secondary-color;
+    border-radius: $input-border-radius;
+    
+    fieldset {
+      border: none;
+      padding: 0;
+
+      legend {
+        font-size: 18px;
+        color: $secondary-color;
+        margin-bottom: 15px;
+      }
+    }
+    
+    .contact, .coment {
+      margin-bottom: 20px;
+      
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      
+      input, textarea {
+        width: 100%;
+        padding: $input-padding;
+        border: 1px solid $secondary-color;
+        border-radius: $input-border-radius;
+        font-size: 16px;
+      }
+    }
+    
+    .button-send {
+      text-align: center;
+      
+      button {
+        background-color: $primary-color;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: $input-border-radius;
+        cursor: pointer;
+        font-size: 16px;
+        
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
 
 }
